@@ -187,10 +187,10 @@ def temporal(df, observations):
     ax.set_ylabel('')  # Clearing the y-axis label
 
     # Adjusting the positions of text labels for each linear formation
-    ax.text(-1.8, 3.5, 'Appearance', fontsize=10, ha='center', va='center')
-    ax.text(-1.8, 2.5, 'Fulfillment of\n"agent"', fontsize=10, ha='center', va='center')
-    ax.text(-1.8, 1.5, 'Fulfillment of\n"theme"', fontsize=10, ha='center', va='center')
-    ax.text(-1.8, 0.5, 'Fulfillment of\n"experiencer"', fontsize=10, ha='center', va='center')
+    ax.text(-2.2, 3.5, 'Appearance', fontsize=10, ha='center', va='center')
+    ax.text(-2.2, 2.5, 'Fulfillment of\n"agent"', fontsize=10, ha='center', va='center')
+    ax.text(-2.2, 1.5, 'Fulfillment of\n"theme"', fontsize=10, ha='center', va='center')
+    ax.text(-2.2, 0.5, 'Fulfillment of\n"experiencer"', fontsize=10, ha='center', va='center')
 
     plt.scatter(10, -1, marker='^', color='black', label='Triangle Marker')
 
