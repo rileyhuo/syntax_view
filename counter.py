@@ -1,7 +1,10 @@
 import matplotlib.pyplot as plt
 
 def temporal(df, observations):
-
+    '''
+    Generate temporal appearances of thematic relations based on the other features of personal arguments,
+    including "Interactional Role", "Gender", "Person" and "Number." 
+    '''
     def find_observation_names(observation):
         observation_dictionary = {
             'Interactional Role': {'Maxine', 'mother', 'father', 'aunt', 'NA'},
@@ -153,7 +156,6 @@ def temporal(df, observations):
         x_pos += 1
 
 
-
     if len(observations[0]) == 1:
 
         legend_patches = [
@@ -169,7 +171,6 @@ def temporal(df, observations):
         ]
     
     
-
     ax.legend(handles=legend_patches, loc='upper left', bbox_to_anchor=(1, 1))
 
     # Setting labels and title

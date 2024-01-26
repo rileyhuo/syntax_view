@@ -2,6 +2,10 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 def conditional(df, title, conditions, y, y_measure):
+    '''
+    Generate conditional distributions of thematic relations based on specified conditions,
+    such as "Gender" and "Grammatical Function."
+    '''
 
     mode = 'coarse'
 
@@ -115,26 +119,6 @@ def conditional(df, title, conditions, y, y_measure):
         
     len_merged_df = len(merged_df)
 
-    # return merged_df
-
-    # # entropy and kl stuff
-    # results = {}
-
-    # index_names = ['entropy']
-
-    # columns = merged_df.columns[1:]
-
-    # for column in columns:
-
-    #     results[column] = []
-        
-    #     probabilities = merged_df[column].astype(float).values  # Convert values to float
-    #     results[column].append(round(entropy(probabilities, base=2), 3))
-
-    # index_df = pd.DataFrame(results)
-    # index_df.index = index_names
-
-    # plotting 
     # if conditional is based on 1 field
     if len(condition_names_here) == 1:
 
@@ -225,8 +209,6 @@ def conditional(df, title, conditions, y, y_measure):
             plt.bar([i + bar_width for i in index], merged_df[f'{conditions[2]}'], width=bar_width, label=conditions[2][0] + ', ' + conditions[2][1] + ', ' + conditions[2][2] + f'\n(n = {total_counts[2]})', 
                     color='#ffea26')
             
-            # new!
-    
         
         plt.xlabel(y_2)
         plt.ylabel(y_measure.capitalize())
@@ -235,8 +217,3 @@ def conditional(df, title, conditions, y, y_measure):
 
         plt.legend(loc="upper left", bbox_to_anchor=(1, 1))
         plt.show()
-    
-
-    # print('KL Divergence = '+ str(round(np.sum(kl_div(merged_df[columns[0]], merged_df[columns[1]])), 3)),
-        #    str(round(np.sum(kl_div(merged_df[columns[1]], merged_df[columns[0]])), 3)))
-    # return index_df
