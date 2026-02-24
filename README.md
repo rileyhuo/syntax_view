@@ -1,1 +1,1 @@
-This repository contains my Fall 2023 experiment: what kind of meaning could be extracted from literature by computers in a purely syntactical reading? Please navigate to [sample_notebook.ipynb](sample_notebook.ipynb) for notebook-level demonstration.
+This repository contains my Fall 2023 experiment: what kind of meaning could be extracted from literature by computers in a purely syntactic reading? Please navigate to [sample_notebook.ipynb](sample_notebook.ipynb) for notebook-level demonstration.
