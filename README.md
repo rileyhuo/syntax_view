@@ -1,3 +1,1 @@
-Please navigate to [sample_notebook.ipynb](sample_notebook.ipynb) to see the demonstration of my syntactic profiling experiments.
-
-All rights reserved.
+This repository contains my Fall 2023 experiment: what kind of meaning could be extracted from literature by computers in a purely syntactical reading? Please navigate to [sample_notebook.ipynb](sample_notebook.ipynb) for notebook-level demonstration.
